@@ -1,0 +1,14 @@
+h1{
+  color: black;
+  text-align: left;
+}
+label{
+  line-height: 30px;
+}
+fieldset{
+  width: 30em;
+  
+}
+form div + div {
+  margin-top: 1em;
+}
