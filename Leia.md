@@ -8,4 +8,4 @@ boa sorte vendo o reposotório.
 - Dúvidas?
 
 Pode me chamar no WhatsApp: (85) 9 8769 9678 ou
-no email acadêmico: sales.iury08@aluno.ifce.edu.br
+no email acadêmico: sales.iury08@aluno.ifce.edu.br.
