@@ -8,112 +8,105 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <title> Questão 1</title>
 </head>
-
 <body>
 
   <form action="/questao1" method="post">
-  </form>
 
-  <div>
-    <h1>Formulário</h1>
-  </div>
-  <fieldset id="DadosPessoais">
-    <legend>
-      <h4>Dados pessoais</h4>
-    </legend>
+    <h1 style="text-align: center;">Formulário</h1>
 
-    <div>
-      <label for="nome">Nome:</label>
-      <input size="58" type="text" id="nome" required />
-    </div>
-    <div>
+    <div class="container" id="dadospessoais">
+      <fieldset>
+        <legend>
+        <h4>Dados pessoais</h4>
+        </legend>
 
-      <label for="data_nas">Data de nascimento:</label>
-      <input type="date" id="data_nas" required />
-      <div>
+        <label for="nome">Nome:</label>
+        <input size="58" type="text" id="nome" placeholder="Escreva como aparece no seu documento" required />
+        <br>
+        
+        <label for="data_nas">Data de nascimento:</label>
+        <input type="date" id="data_nas" required />
+        <br>
 
         <label for="endereco">Endereço:</label>
-        <input size="54" type="text" id="endereco" required />
-        <div>
+        <input size="54" type="text" id="endereco" placeholder="Rua, número e complemento"required />
+        <br>
+        
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" required />
 
-          <label for="bairro">Bairro:</label>
-          <input type="text" id="bairro" required />
+        <label style="padding-left: 20px" for="cidade">Cidade:</label>
+        <input type="text" id="cidade" required />
+        <br>
+        
+        <label for="cep">CEP:</label>
+        <input size="22" type="text" id="cep" required />
 
-          <label style="padding-left: 20px" for="cidade">Cidade:</label>
-          <input type="text" id="cidade" required />
-          <div>
+        <label style="padding-left: 20px" for="estado">Estado:</label>
+        <select name="Estado:" value="Escolha uma UF">
+          <option disabled selected value="valor00">Escolha um</option>
+          <option value="valor01">Acre</option>
+          <option value="valor02">Alagoas</option>
+          <option value="valor03">Amapá</option>
+          <option value="valor04">Amazonas</option>
+          <option value="valor05">Bahia</option>
+          <option value="valor06">Ceará</option>
+          <option value="valor07">Espírito Santo</option>
+          <option value="valor08">Goiás</option>
+          <option value="valor09">Maranhão</option>
+          <option value="valor10">Mato Grosso</option>
+          <option value="valor11">Mato Grosso do Sul</option>
+          <option value="valor12">Minas Gerais</option>
+          <option value="valor13">Pará</option>
+          <option value="valor14">Paraíba</option>
+          <option value="valor15">Paraná</option>
+          <option value="valor16">Pernambuco</option>
+          <option value="valor17">Piauí</option>
+          <option value="valor18">Rio de Janeiro</option>
+          <option value="valor19">Rio Grande do Norte</option>
+          <option value="valor20">Rio Grande do Sul</option>
+          <option value="valor21">Rondônia</option>
+          <option value="valor22">Roraima</option>
+          <option value="valor23">Santa Catarina</option>
+          <option value="valor24">São Paulo</option>
+          <option value="valor25">Sergipe</option>
+          <option value="valor26">Tocantins</option>
+          <option value="valor27">Distrito Federal</option>
+        </select>
+    </div>
+    <div id="dadosprofissionais">
+      <fieldset>
+        <legend>
+          <h4>Dados profissionais</h4>
+        </legend>
 
-            <label for="cep">CEP:</label>
-            <input size="22" type="text" id="cep" required />
+        <td2>Natureza do cargo:</td2>
+        <br>
+        <input type="radio" name="opcao" value="op1">Gerência
+        <input type="radio" name="opcao" value="op2">Finânceiro
+        <input type="radio" name="opcao" value="op3">Recepção
+        <input type="radio" name="opcao" value="op4">Administrativo
+        <input type="radio" name="opcao" value="op5">Jurídico
+        <br><br>
+        <td2>Área de interesse:</td2>
+        <br>
+        <input type="checkbox" name="opcao" value="op1" /> Computação
+        <input type="checkbox" name="opcao" value="op2" /> Química
+        <input type="checkbox" name="opcao" value="op3" /> Meio Amb.
+        <input type="checkbox" name="opcao" value="op4" /> Engen.
+        <input type="checkbox" name="opcao" value="op5" /> Matemática
+        <br><br>
+        <td2>Mini-currículo:</td2>
+        <br>
+        <textarea name="curriculo" rows="5" cols="48" placeholder="Nós conte sobre você aqui."></textarea>
 
-            <label style="padding-left: 20px" for="estado">Estado:</label>
-            <select name="Estado:">
-              <option value="valor01">Acre</option>
-              <option value="valor02">Alagoas</option>
-              <option value="valor03">Amapá</option>
-              <option value="valor04">Amazonas</option>
-              <option value="valor05">Bahia</option>
-              <option value="valor06">Ceará</option>
-              <option value="valor07">Espírito Santo</option>
-              <option value="valor08">Goiás</option>
-              <option value="valor09">Maranhão</option>
-              <option value="valor10">Mato Grosso</option>
-              <option value="valor11">Mato Grosso do Sul</option>
-              <option value="valor12">Minas Gerais</option>
-              <option value="valor13">Pará</option>
-              <option value="valor14">Paraíba</option>
-              <option value="valor15">Paraná</option>
-              <option value="valor16">Pernambuco</option>
-              <option value="valor17">Piauí</option>
-              <option value="valor18">Rio de Janeiro</option>
-              <option value="valor19">Rio Grande do Norte</option>
-              <option value="valor20">Rio Grande do Sul</option>
-              <option value="valor21">Rondônia</option>
-              <option value="valor22">Roraima</option>
-              <option value="valor23">Santa Catarina</option>
-              <option value="valor24">São Paulo</option>
-              <option value="valor25">Sergipe</option>
-              <option value="valor26">Tocantins</option>
-              <option value="valor27">Distrito Federal</option>
-            </select>
-  </fieldset>
+      </fieldset>
+      <br>
+    </div>
+    <div id="botoes">
+      <!--Botão Enviar-->
+      <Button type="submit"id="enviar" value="enviar">Enviar</button>
 
-  <fieldset>
-    <legend>
-      <h4>Dados profissionais</h4>
-    </legend>
-
-    <td2>Natureza do cargo:</td2>
-    <br>
-    <input type="radio" name="opcao" value="op1">Gerência
-    <input type="radio" name="opcao" value="op2">Finânceiro
-    <input type="radio" name="opcao" value="op3">Recepção
-    <input type="radio" name="opcao" value="op4">Administrativo
-    <input type="radio" name="opcao" value="op5">Jurídico
-    <br>
-    <br>
-    <td2>Área de interesse:</td2>
-    <br>
-    <input type="checkbox" name="opcao" value="op1" /> Computação
-    <input type="checkbox" name="opcao" value="op2" /> Química
-    <input type="checkbox" name="opcao" value="op3" /> Meio Amb.
-    <input type="checkbox" name="opcao" value="op4" /> Engen.
-    <input type="checkbox" name="opcao" value="op5" /> Matemática
-    <br>
-    <br>
-    <td2>Mini-currículo:</td2>
-    <br>
-    <textarea name="curriculo" rows="5" cols="48">Escreva sobre você.</textarea>
-
-
-
-  </fieldset>
-
-  <br>
-  <class="button"><button type="submit">Enviar</button>
-    <class="button"><button type="reset">Limpar</button>
-      </div>
-      </form>
-</body>
-
-</html>
+        <!--Botão Limpar-->
+      <Button type="reset" id="limpar" value="limpar">Limpar</button>
+    </div>

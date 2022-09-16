@@ -1,14 +1,30 @@
 h1{
   color: black;
-  text-align: left;
+  padding-right: 350px;
 }
 label{
   line-height: 30px;
 }
 fieldset{
   width: 30em;
-  
 }
-form div + div {
-  margin-top: 1em;
+body div{
+  display: flex;
+}
+#dadospessoais{
+  margin: 0auto;
+  display: flex;
+  justify-content: center;
+  margin-top: -45px;
+}
+#dadosprofissionais{
+  margin: 0auto;
+  display: flex;
+  justify-content: center;
+  margin-top: -15px;
+}
+#botoes{
+  position: relative;
+  margin-top: 20px;
+  padding-left: 412px;
 }
