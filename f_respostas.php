@@ -1,4 +1,4 @@
-<?
+<?php
     $destinatario = "sales.iury08@aluno.ifce.edu.br";
 
     $nome = $_REQUEST['nome'];
