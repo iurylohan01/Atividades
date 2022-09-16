@@ -1,5 +1,5 @@
 <?
-    $destinatario = "iurylohan8@gmail.com";
+    $destinatario = "sales.iury08@aluno.ifce.edu.br";
 
     $nome = $_REQUEST['nome'];
     $data_nas = $_REQUEST['data_nasc'];
@@ -23,7 +23,7 @@
     $body = $body . "Mini-Currículo: " . $curriculo . "\n\n";
     $body = $body . "===================================" . "\n";
 
-    mail($destinatario, $assunto , $body, "From: $email\r\n");
+    mail($destinatario, $nome , $data_nasc, $endereco, $bairro, $cidade, $cep, $estado, $curriculo, $body, "From: $email\r\n");
 
     header("location:obrigado.htm");
 
