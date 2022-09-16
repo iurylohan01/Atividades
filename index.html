@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <form action="/questao1" method="post">
+  <form action="dados_usuario.php" method="post" name="form">
 
     <h1 style="text-align: center;">Formulário</h1>
 
@@ -21,30 +21,30 @@
         </legend>
 
         <label for="nome">Nome:</label>
-        <input size="58" type="text" id="nome" name="nome_usuario" placeholder="Escreva como aparece no seu documento" required />
+        <input size="58" type="text" id="nome" name="nome" placeholder="Escreva como aparece no seu documento" autocomplete required />
         <br>
         
         <label for="data_nas">Data de nascimento:</label>
-        <input type="date" id="data_nas" name="nascimento_usuario" required />
+        <input type="date" id="data_nas" name="data_nas" required />
         <br>
 
         <label for="endereco">Endereço:</label>
-        <input size="54" type="text" id="endereco" name="endereco_usuario" placeholder="Rua, número e complemento"required />
+        <input size="54" type="text" id="endereco" name="endereco" placeholder="Rua, número e complemento"required />
         <br>
         
         <label for="bairro">Bairro:</label>
-        <input type="text" id="bairro" name="bairro_usuario" required />
+        <input type="text" id="bairro" name="bairro" required />
 
         <label style="padding-left: 20px" for="cidade">Cidade:</label>
-        <input type="text" id="cidade" required />
+        <input type="text" id="cidade" name="cidade" required />
         <br>
         
         <label for="cep">CEP:</label>
-        <input size="22" type="text" id="cep" name="cep_usuario" required />
+        <input size="22" type="text" id="cep" name="cep" required />
 
         <label style="padding-left: 20px" for="estado">Estado:</label>
-        <select name="Estado:" value="Escolha uma UF">
-          <option name="estado_usuario" disabled selected value="valor00">Escolha um</option>
+        <select name="estado:" value="Escolha uma UF">
+          <option name="estado" disabled selected value="valor00">Escolha um</option>
           <option value="valor01">Acre</option>
           <option value="valor02">Alagoas</option>
           <option value="valor03">Amapá</option>
@@ -98,7 +98,7 @@
         <br><br>
         <td2>Mini-currículo:</td2>
         <br>
-        <textarea name="curriculo" rows="5" cols="48" name="curriculo_usuario" placeholder="Nós conte sobre você aqui."></textarea>
+        <textarea name="curriculo" id="curriculo" rows="5" cols="48" name="curriculo_usuario" placeholder="Nós conte sobre você aqui."></textarea>
 
       </fieldset>
       <br>
